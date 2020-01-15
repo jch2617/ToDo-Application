@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-// import { HttpClient , HttpHeaders } from '@angular/common/http'
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +6,7 @@ import { Injectable } from '@angular/core';
 
 export class TodoService {
 
-  constructor(public http:HttpClient) { }
+  constructor() { }
 
   getTodos() {
     return [

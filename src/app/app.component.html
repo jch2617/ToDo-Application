@@ -1,20 +1,19 @@
-<body>
-  <h1>To Do List</h1>
-  <h3>A place to store your to do list</h3>
+<div>  
+  <header class="header">
+    <h1>To Do List</h1>
+    <h3>A place to store your to do list</h3>
+  </header>   
   <input type="text" placeholder="Filter to-do's">
   <app-todos>
-    <ol>
-      <li>Make dinner<span class="close">x</span></li>
-      <li>Take out the trash<span class="close">x</span></li>
-      <li>Return a package<span class="close">x</span></li>
-      <li>Skin the cat<span class="close">x</span></li>
-      <li>Make a smoothie<span class="close">x</span></li>
-      <li>Skin the cat<span class="close">x</span></li>
-    </ol>
+    <!-- <ol class="todo-list">
+      <li>Skin the cat<span class="close">x</span>
+        <button class="destroy" (click)="removeTodo(i)">X</button>
+      </li>
+    </ol> -->
   </app-todos>
   <input type="text" placeholder="Add to-do's">
   <button type="button">Add a To-Do</button>
-</body>
+</div>
 
 
 

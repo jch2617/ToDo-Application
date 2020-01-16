@@ -14,7 +14,20 @@ export class TodosComponent implements OnInit {
   constructor(public todoService:TodoService) { }
 
   ngOnInit() {
-    this.todos = this.todoService.getTodos();
+    this.todos = [
+      {
+        title: 'Take out the trash',
+        completed: false
+      },
+      {
+        title: 'Go to the bank',
+        completed: true
+      },
+      {
+        title: 'Walk the dog',
+        completed: false
+      }
+    ]
   } 
 
 }

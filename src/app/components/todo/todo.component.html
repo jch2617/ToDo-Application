@@ -1,3 +1,3 @@
-<app-todo-item *ngFor="let todo of todos" [todo] ="todo">
-        <li> {{ todo.title }} </li>
+<app-todo-item *ngFor="let todo of todos; let i =index;" [id]="i + 1" [todo] ="todo" [todos]="todos">
+    {{ todo.title }}
 </app-todo-item>

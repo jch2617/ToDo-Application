@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Todo } from 'src/app/models/Todo';
+import { getLocaleExtraDayPeriods } from '@angular/common';
 
 @Component({
   selector: 'app-todo-item',
@@ -8,6 +9,9 @@ import { Todo } from 'src/app/models/Todo';
 })
 export class TodoItemComponent implements OnInit {
   @Input() todo: Todo;
+  @Input() todos: Todo;
+  @Input() id: number;
+
 
   constructor() { }
 
@@ -24,9 +28,10 @@ export class TodoItemComponent implements OnInit {
   }
 
   onToggle(todo) {
-    todo.complete = !todo.completed;
+    todo.completed = !todo.completed;
   }
+
   onDelete(todo) {
-    console.log('delete');
+    this.todos.splice(this.todo);
   }
 }

@@ -1,6 +1,6 @@
 <div [ngClass]="setClasses()">
-        <button class="delete" (change)="onToggle(todo)"*ngIf="!todo.completed">Complete</button>
-        {{ todo.id }} {{ todo.title}}
-        <button id="destroy" (click)="onDelete(todo)" class="del">x</button>
+     {{ id }}
+    <button class="delete" (click)="onToggle(todo)" *ngIf="!todo.completed">Complete</button>
+     {{ todo.title }}
+    <button id="destroy" (click)="onDelete(todo)" class="del">X</button>  
 </div>
-

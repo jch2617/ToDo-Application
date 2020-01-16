@@ -1,33 +1,87 @@
 * {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
     background-color: lightcoral;
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.box {
+  background-color: white;
+  box-shadow: black;
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
 }
   
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.4;
-  }
-  
-  a {
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .container {
-    padding: 0 1rem;
-  }
-  
-  .btn {
-    display: inline-block;
-    border: none;
-    background: #555;
-    color: #fff;
-    padding: 7px 20px;
-    cursor: pointer;
-  }
-  
-  .btn:hover {
-    background: #666;
-  }
+body {
+  background: #E166DB;
+  background: -webkit-linear-gradient(left, #E166DB, #EE9639);
+  background: -moz-linear-gradient(left, #E166DB, #EE9639);
+  background: linear-gradient(to right, #E166DB, #EE9639);
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: #ffffff;
+  color: #fff;
+  padding: 7px 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #ffffff;
+}
+
+button {
+  width: 100%;
+}
+
+input {
+  width: 95%;
+  display: flex;
+  height: 20px;
+  border-radius: 5px;
+  margin: auto;
+  border-width: 1px;
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+h3 {
+  margin-left: 10px;
+}
+
+h2 {
+  margin: 10px;
+  padding-top: 10px;
+}
+
+.delete {
+  float: left;
+  border: 2px solid red;
+  border-radius: 5px;
+  height: 20px;
+  color: red;
+}
+
+#add {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  color: #ffffff;
+  font-size: 13px;
+}
+

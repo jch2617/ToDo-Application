@@ -1,3 +1,9 @@
 body {
     background-color: lightcoral;
 }
+
+button {
+    background-color:#FF0082;
+    height: 30px;
+    border-radius: 10px;
+}

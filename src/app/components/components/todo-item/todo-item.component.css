@@ -1,20 +1,28 @@
 .del {
-    /* background: #ff0000; */
-    color: #fff;
+    color: #000000;
     border: none;
     padding: 5px 9px;
-    border-radius: 50%;
     cursor: pointer;
     float: right;
   }
   
 .todo {
-    background: #f4f4f4;
+    background: white;
     padding: 10px;
-    border-bottom: 1px #ccc dotted;
+    margin-bottom: 5px;
 }
 
 .is-complete {
     text-decoration: line-through;
 }
 
+button {
+    display: flex;
+    width: 100px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+#destroy {
+    width: 10px;
+}

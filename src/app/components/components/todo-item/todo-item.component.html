@@ -1,5 +1,5 @@
 <div [ngClass]="setClasses()">
-     {{ id }}
+    <span> {{ id }} </span>
     <button class="delete" (click)="onToggle(todo)" *ngIf="!todo.completed">Complete</button>
      {{ todo.title }}
     <button id="destroy" (click)="onDelete(todo)" class="del">X</button>  

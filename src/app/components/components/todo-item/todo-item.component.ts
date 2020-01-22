@@ -32,6 +32,6 @@ export class TodoItemComponent implements OnInit {
   }
 
   onDelete(todo) {
-    this.todos.splice(this.id-1 , 1);
+    this.todos.splice(this.id -1 , 1);
   }
 }

@@ -21,7 +21,7 @@ export class TodosComponent implements OnInit {
       },
       {
         title: 'Go to the bank',
-        completed: true
+        completed: false
       },
       {
         title: 'Walk the dog',

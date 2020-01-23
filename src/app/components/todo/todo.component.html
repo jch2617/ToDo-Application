@@ -1,3 +1,7 @@
-<app-todo-item *ngFor="let todo of todos; let i =index;" [id]="i + 1" [todo] ="todo" [todos]="todos">
+<input type="text" placeholder="Filter to-do's" [(ngModel)]="searchText">
+
+<app-todo-item *ngFor="let todo of todos | filter : searchText; let i =index;" [id]="i + 1" [todo] ="todo" [todos]="todos">
     {{ todo.title }}
 </app-todo-item>
+<input type="text" placeholder="Add to-do's" [(ngModel)]="inputText">
+<button (click)="addTodo(inputText)" id="add" type="button" >Add a To-Do</button>

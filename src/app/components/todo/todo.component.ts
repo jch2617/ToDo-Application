@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { TodoService } from '../../services/todo.service';
 import { Todo } from '../../models/Todo'
 
@@ -10,6 +10,8 @@ import { Todo } from '../../models/Todo'
 
 export class TodosComponent implements OnInit {
   todos:Todo[];
+  @Input() title: string;
+  @Input() completed: boolean;
 
   constructor(public todoService:TodoService) { }
 
@@ -29,5 +31,18 @@ export class TodosComponent implements OnInit {
       }
     ]
   } 
+  
+  addTodo(title) {
+    this.todos.push({title: title, completed: false})
+  }    
 
+  // searchText() {
+  // return this.title.filter(todo => {
+  //    if (this.filter) {
+  //      return todo.task.includes(this.filter);
+  //    } else {
+  //      return true;
+  //    }
+  //  });
 }
+  

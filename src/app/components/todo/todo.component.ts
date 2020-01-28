@@ -35,14 +35,5 @@ export class TodosComponent implements OnInit {
   addTodo(title) {
     this.todos.push({title: title, completed: false})
   }    
-
-  // searchText() {
-  // return this.title.filter(todo => {
-  //    if (this.filter) {
-  //      return todo.task.includes(this.filter);
-  //    } else {
-  //      return true;
-  //    }
-  //  });
 }
   

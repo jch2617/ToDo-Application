@@ -8,7 +8,7 @@ import { Todo } from 'src/app/models/Todo';
 })
 export class TodoItemComponent implements OnInit {
   @Input() todo: Todo;
-  @Input() todos: Todo;
+  @Input() todos: Todo[];
   @Input() id: number;
 
 
